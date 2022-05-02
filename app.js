@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     done.setAttribute("type", "button");
     done.setAttribute("value", "Done");
 
-    list.innerHTML += "<li>" + task.value + "</li>";
+    list.innerHTML += "<li>" + task.value + " " + done.outerHTML + "</li>";
     task.value = "";
   }
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "Enter") {
       submit.click();
     }
-  })
-  // Event listener: adds task to unordered list.
+  });
+  // Event listener: on click calls addTask function.
   submit.addEventListener("click", addTask);
 });
