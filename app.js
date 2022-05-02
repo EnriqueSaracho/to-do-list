@@ -12,5 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     task.value = "";
   }
 
+  task.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      submit.click();
+    }
+  })
   submit.addEventListener("click", addTask);
 });
