@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function: adds task from text input to unordered list.
   function addTask() {
-    const done = document.createElement("input");
+    const done = document.createElement("input"); // Creates Done button.
     done.setAttribute("type", "button");
     done.setAttribute("value", "Done");
 
-    list.innerHTML += "<li>" + task.value + " " + done.outerHTML + "</li>";
-    task.value = "";
+    list.innerHTML += "<li>" + task.value + " " + done.outerHTML + "</li>"; // Creates task (<li>)
+    task.value = ""; // Clears text input
   }
 
   // Event listener: clicks submit button when pressing enter on text input.
