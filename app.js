@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function: adds task from text input to unordered list.
   function addTask() {
-    console.log()
+    const li = document.createElement("li");
+    ul.appendChild(li);
+    li.innerHTML = input.value;
 
     // const done = document.createElement("input"); // Creates Done button.
     // done.setAttribute("type", "button");
