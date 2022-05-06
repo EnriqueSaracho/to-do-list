@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     x.innerHTML = "x"
     li.appendChild(x);
 
-    
+    x.addEventListener("click", () => {
+      x.parentElement.style.display = "none"
+    })
 
     // const done = document.createElement("input"); // Creates Done button.
     // done.setAttribute("type", "button");
