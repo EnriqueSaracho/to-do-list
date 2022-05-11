@@ -61,7 +61,9 @@ li::marker {
 li button {
     margin: 0 10px;
     height: 20px;
-    width: 20px;
+    width: 50px;
     border: none;
     border-radius: 2px;
+    font-family: 'Padauk', sans-serif;
+    font-weight: 700;
 }

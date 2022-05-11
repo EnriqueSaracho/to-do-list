@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ul.appendChild(li);
 
     const x = document.createElement("button"); // Creates X button
-    x.innerHTML = "X";
+    x.innerHTML = "DONE";
     li.appendChild(x);
 
-    input.value = ""; // Erases input
+    input.value = ""; // Erases input text
 
     x.addEventListener("click", () => {
       // X button functionality
