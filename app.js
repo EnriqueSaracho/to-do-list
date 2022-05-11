@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     x.innerHTML = "X";
     li.appendChild(x);
 
+    input.value = ""; // Erases input
+
     x.addEventListener("click", () => {
       // X button functionality
       x.parentElement.style.display = "none";
