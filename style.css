@@ -26,17 +26,20 @@ body {
 .input {
     height: 30px;
     width: 450px;
-    border-radius: 0;
-    border: 0;
+    border-radius: 5px 0 0 5px;
+    border: none;
     margin-right: 0;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: rgb(83, 83, 83);
+    outline: none;
+    color: white;
+    font-size: 15px;
 }
 
 .submit {
-    height: 39px;
+    height: 40px;
     width: 100px;
-    border-radius: 0;
+    border-radius: 0 5px 5px 0;
     border: 0;
     background-color: #708090;
     color: white;
@@ -44,4 +47,21 @@ body {
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.ul {
+    width: 500px;
+    font-size: 20px;
+}
+
+li::marker {
+    color: #708090;
+}
+
+li button {
+    margin: 0 10px;
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 2px;
 }

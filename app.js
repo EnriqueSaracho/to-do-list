@@ -9,11 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     li.innerHTML = input.value;
     ul.appendChild(li);
 
-    const x = document.createElement("button");
-    x.innerHTML = "x";
+    const x = document.createElement("button"); // Creates X button
+    x.innerHTML = "X";
     li.appendChild(x);
 
     x.addEventListener("click", () => {
+      // X button functionality
       x.parentElement.style.display = "none";
     });
   }
